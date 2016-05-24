@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052C06CF1CF3BCB3001F9F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C06CE1CF3BCB3001F9F6B /* AppDelegate.swift */; };
+		052C06D11CF3BCB3001F9F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C06D01CF3BCB3001F9F6B /* ViewController.swift */; };
+		052C06D41CF3BCB3001F9F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052C06D21CF3BCB3001F9F6B /* Main.storyboard */; };
+		052C06D61CF3BCB3001F9F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052C06D51CF3BCB3001F9F6B /* Assets.xcassets */; };
+		052C06D91CF3BCB3001F9F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052C06D71CF3BCB3001F9F6B /* LaunchScreen.storyboard */; };
+		052C06E41CF3BCB4001F9F6B /* MicromixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C06E31CF3BCB4001F9F6B /* MicromixTests.swift */; };
+		052C06EF1CF3BCB4001F9F6B /* MicromixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C06EE1CF3BCB4001F9F6B /* MicromixUITests.swift */; };
+		052C06FD1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052C06FC1CF3BEEE001F9F6B /* GoogleService-Info.plist */; };
+		052C06FE1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052C06FC1CF3BEEE001F9F6B /* GoogleService-Info.plist */; };
+		052C06FF1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052C06FC1CF3BEEE001F9F6B /* GoogleService-Info.plist */; };
+		05E515A31CF504D2003E0076 /* sectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E515A21CF504D2003E0076 /* sectionModel.swift */; };
+		05E515A51CF50809003E0076 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E515A41CF50809003E0076 /* AddNewViewController.swift */; };
+		4938487B57198B0719793924 /* Pods_Micromix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944589162F19976622C6EEF /* Pods_Micromix.framework */; };
+		58A1C5E46B6FE33DB7E6A2E4 /* Pods_MicromixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF48DD42977605EF9E5644F5 /* Pods_MicromixUITests.framework */; };
+		A8229C3DB0A5410A9E91A0C0 /* Pods_MicromixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DD15A9E54EE3F44ED25283 /* Pods_MicromixTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		052C06E01CF3BCB4001F9F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052C06C31CF3BCB3001F9F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C06CA1CF3BCB3001F9F6B;
+			remoteInfo = Micromix;
+		};
+		052C06EB1CF3BCB4001F9F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052C06C31CF3BCB3001F9F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C06CA1CF3BCB3001F9F6B;
+			remoteInfo = Micromix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		052C06CB1CF3BCB3001F9F6B /* Micromix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Micromix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C06CE1CF3BCB3001F9F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		052C06D01CF3BCB3001F9F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		052C06D31CF3BCB3001F9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		052C06D51CF3BCB3001F9F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		052C06D81CF3BCB3001F9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		052C06DA1CF3BCB3001F9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052C06DF1CF3BCB4001F9F6B /* MicromixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicromixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C06E31CF3BCB4001F9F6B /* MicromixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicromixTests.swift; sourceTree = "<group>"; };
+		052C06E51CF3BCB4001F9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052C06EA1CF3BCB4001F9F6B /* MicromixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicromixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C06EE1CF3BCB4001F9F6B /* MicromixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicromixUITests.swift; sourceTree = "<group>"; };
+		052C06F01CF3BCB4001F9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		052C06FC1CF3BEEE001F9F6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05E515A21CF504D2003E0076 /* sectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionModel.swift; sourceTree = "<group>"; };
+		05E515A41CF50809003E0076 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		19670C3548D2501F1143CB08 /* Pods-MicromixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicromixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicromixTests/Pods-MicromixTests.release.xcconfig"; sourceTree = "<group>"; };
+		429CF36877B2F7DFA78CC140 /* Pods-MicromixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicromixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicromixTests/Pods-MicromixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51AD7979A3E89C47767E8539 /* Pods-Micromix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micromix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micromix/Pods-Micromix.release.xcconfig"; sourceTree = "<group>"; };
+		5944589162F19976622C6EEF /* Pods_Micromix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Micromix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8647E6587A8B699D0A3DF97B /* Pods-Micromix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micromix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micromix/Pods-Micromix.debug.xcconfig"; sourceTree = "<group>"; };
+		D3946CF35EE1BE465CD7A618 /* Pods-MicromixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicromixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicromixUITests/Pods-MicromixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D852EBB142155E38D9B5DB7F /* Pods-MicromixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicromixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicromixUITests/Pods-MicromixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9DD15A9E54EE3F44ED25283 /* Pods_MicromixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicromixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF48DD42977605EF9E5644F5 /* Pods_MicromixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicromixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		052C06C81CF3BCB3001F9F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4938487B57198B0719793924 /* Pods_Micromix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06DC1CF3BCB4001F9F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8229C3DB0A5410A9E91A0C0 /* Pods_MicromixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06E71CF3BCB4001F9F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A1C5E46B6FE33DB7E6A2E4 /* Pods_MicromixUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		052C06C21CF3BCB3001F9F6B = {
+			isa = PBXGroup;
+			children = (
+				052C06CD1CF3BCB3001F9F6B /* Micromix */,
+				052C06E21CF3BCB4001F9F6B /* MicromixTests */,
+				052C06ED1CF3BCB4001F9F6B /* MicromixUITests */,
+				052C06CC1CF3BCB3001F9F6B /* Products */,
+				7A4172800752B7DEA1E82570 /* Pods */,
+				9F3B9CA090FA3EBCE96BB2FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		052C06CC1CF3BCB3001F9F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				052C06CB1CF3BCB3001F9F6B /* Micromix.app */,
+				052C06DF1CF3BCB4001F9F6B /* MicromixTests.xctest */,
+				052C06EA1CF3BCB4001F9F6B /* MicromixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		052C06CD1CF3BCB3001F9F6B /* Micromix */ = {
+			isa = PBXGroup;
+			children = (
+				052C06CE1CF3BCB3001F9F6B /* AppDelegate.swift */,
+				052C06D01CF3BCB3001F9F6B /* ViewController.swift */,
+				052C06D21CF3BCB3001F9F6B /* Main.storyboard */,
+				05E515A21CF504D2003E0076 /* sectionModel.swift */,
+				05E515A41CF50809003E0076 /* AddNewViewController.swift */,
+				052C06D51CF3BCB3001F9F6B /* Assets.xcassets */,
+				052C06D71CF3BCB3001F9F6B /* LaunchScreen.storyboard */,
+				052C06DA1CF3BCB3001F9F6B /* Info.plist */,
+				052C06FC1CF3BEEE001F9F6B /* GoogleService-Info.plist */,
+			);
+			path = Micromix;
+			sourceTree = "<group>";
+		};
+		052C06E21CF3BCB4001F9F6B /* MicromixTests */ = {
+			isa = PBXGroup;
+			children = (
+				052C06E31CF3BCB4001F9F6B /* MicromixTests.swift */,
+				052C06E51CF3BCB4001F9F6B /* Info.plist */,
+			);
+			path = MicromixTests;
+			sourceTree = "<group>";
+		};
+		052C06ED1CF3BCB4001F9F6B /* MicromixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				052C06EE1CF3BCB4001F9F6B /* MicromixUITests.swift */,
+				052C06F01CF3BCB4001F9F6B /* Info.plist */,
+			);
+			path = MicromixUITests;
+			sourceTree = "<group>";
+		};
+		7A4172800752B7DEA1E82570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8647E6587A8B699D0A3DF97B /* Pods-Micromix.debug.xcconfig */,
+				51AD7979A3E89C47767E8539 /* Pods-Micromix.release.xcconfig */,
+				429CF36877B2F7DFA78CC140 /* Pods-MicromixTests.debug.xcconfig */,
+				19670C3548D2501F1143CB08 /* Pods-MicromixTests.release.xcconfig */,
+				D852EBB142155E38D9B5DB7F /* Pods-MicromixUITests.debug.xcconfig */,
+				D3946CF35EE1BE465CD7A618 /* Pods-MicromixUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F3B9CA090FA3EBCE96BB2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5944589162F19976622C6EEF /* Pods_Micromix.framework */,
+				E9DD15A9E54EE3F44ED25283 /* Pods_MicromixTests.framework */,
+				EF48DD42977605EF9E5644F5 /* Pods_MicromixUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		052C06CA1CF3BCB3001F9F6B /* Micromix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C06F31CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "Micromix" */;
+			buildPhases = (
+				D204EC893535E37A3DFD9BA1 /* 📦 Check Pods Manifest.lock */,
+				052C06C71CF3BCB3001F9F6B /* Sources */,
+				052C06C81CF3BCB3001F9F6B /* Frameworks */,
+				052C06C91CF3BCB3001F9F6B /* Resources */,
+				BFF742B33837D0F2452B01B3 /* 📦 Embed Pods Frameworks */,
+				FA9AF3DDE1FC0FD760B6E6AE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Micromix;
+			productName = Micromix;
+			productReference = 052C06CB1CF3BCB3001F9F6B /* Micromix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		052C06DE1CF3BCB4001F9F6B /* MicromixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C06F61CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "MicromixTests" */;
+			buildPhases = (
+				FFA7E5D44208B2E2EDCB8035 /* 📦 Check Pods Manifest.lock */,
+				052C06DB1CF3BCB4001F9F6B /* Sources */,
+				052C06DC1CF3BCB4001F9F6B /* Frameworks */,
+				052C06DD1CF3BCB4001F9F6B /* Resources */,
+				B37E5E38DA05BFD972881784 /* 📦 Embed Pods Frameworks */,
+				9277F2D838370FC3459E3F2B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C06E11CF3BCB4001F9F6B /* PBXTargetDependency */,
+			);
+			name = MicromixTests;
+			productName = MicromixTests;
+			productReference = 052C06DF1CF3BCB4001F9F6B /* MicromixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		052C06E91CF3BCB4001F9F6B /* MicromixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C06F91CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "MicromixUITests" */;
+			buildPhases = (
+				7E4B3A011C167001744AAF02 /* 📦 Check Pods Manifest.lock */,
+				052C06E61CF3BCB4001F9F6B /* Sources */,
+				052C06E71CF3BCB4001F9F6B /* Frameworks */,
+				052C06E81CF3BCB4001F9F6B /* Resources */,
+				8580742D266D47137F14FDE0 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C06EC1CF3BCB4001F9F6B /* PBXTargetDependency */,
+			);
+			name = MicromixUITests;
+			productName = MicromixUITests;
+			productReference = 052C06EA1CF3BCB4001F9F6B /* MicromixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		052C06C31CF3BCB3001F9F6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Inspectezr;
+				TargetAttributes = {
+					052C06CA1CF3BCB3001F9F6B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					052C06DE1CF3BCB4001F9F6B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 052C06CA1CF3BCB3001F9F6B;
+					};
+					052C06E91CF3BCB4001F9F6B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 052C06CA1CF3BCB3001F9F6B;
+					};
+				};
+			};
+			buildConfigurationList = 052C06C61CF3BCB3001F9F6B /* Build configuration list for PBXProject "Micromix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 052C06C21CF3BCB3001F9F6B;
+			productRefGroup = 052C06CC1CF3BCB3001F9F6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				052C06CA1CF3BCB3001F9F6B /* Micromix */,
+				052C06DE1CF3BCB4001F9F6B /* MicromixTests */,
+				052C06E91CF3BCB4001F9F6B /* MicromixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		052C06C91CF3BCB3001F9F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06D91CF3BCB3001F9F6B /* LaunchScreen.storyboard in Resources */,
+				052C06FD1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */,
+				052C06D61CF3BCB3001F9F6B /* Assets.xcassets in Resources */,
+				052C06D41CF3BCB3001F9F6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06DD1CF3BCB4001F9F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06FE1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06E81CF3BCB4001F9F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06FF1CF3BEEE001F9F6B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E4B3A011C167001744AAF02 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8580742D266D47137F14FDE0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicromixUITests/Pods-MicromixUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9277F2D838370FC3459E3F2B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicromixTests/Pods-MicromixTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37E5E38DA05BFD972881784 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicromixTests/Pods-MicromixTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF742B33837D0F2452B01B3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Micromix/Pods-Micromix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D204EC893535E37A3DFD9BA1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9AF3DDE1FC0FD760B6E6AE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Micromix/Pods-Micromix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA7E5D44208B2E2EDCB8035 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		052C06C71CF3BCB3001F9F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06D11CF3BCB3001F9F6B /* ViewController.swift in Sources */,
+				052C06CF1CF3BCB3001F9F6B /* AppDelegate.swift in Sources */,
+				05E515A31CF504D2003E0076 /* sectionModel.swift in Sources */,
+				05E515A51CF50809003E0076 /* AddNewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06DB1CF3BCB4001F9F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06E41CF3BCB4001F9F6B /* MicromixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C06E61CF3BCB4001F9F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C06EF1CF3BCB4001F9F6B /* MicromixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052C06E11CF3BCB4001F9F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C06CA1CF3BCB3001F9F6B /* Micromix */;
+			targetProxy = 052C06E01CF3BCB4001F9F6B /* PBXContainerItemProxy */;
+		};
+		052C06EC1CF3BCB4001F9F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C06CA1CF3BCB3001F9F6B /* Micromix */;
+			targetProxy = 052C06EB1CF3BCB4001F9F6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		052C06D21CF3BCB3001F9F6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C06D31CF3BCB3001F9F6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		052C06D71CF3BCB3001F9F6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C06D81CF3BCB3001F9F6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		052C06F11CF3BCB4001F9F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		052C06F21CF3BCB4001F9F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		052C06F41CF3BCB4001F9F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8647E6587A8B699D0A3DF97B /* Pods-Micromix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Micromix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.Micromix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		052C06F51CF3BCB4001F9F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AD7979A3E89C47767E8539 /* Pods-Micromix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Micromix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.Micromix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		052C06F71CF3BCB4001F9F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429CF36877B2F7DFA78CC140 /* Pods-MicromixTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MicromixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.MicromixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Micromix.app/Micromix";
+			};
+			name = Debug;
+		};
+		052C06F81CF3BCB4001F9F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19670C3548D2501F1143CB08 /* Pods-MicromixTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MicromixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.MicromixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Micromix.app/Micromix";
+			};
+			name = Release;
+		};
+		052C06FA1CF3BCB4001F9F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D852EBB142155E38D9B5DB7F /* Pods-MicromixUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MicromixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.MicromixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Micromix;
+			};
+			name = Debug;
+		};
+		052C06FB1CF3BCB4001F9F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3946CF35EE1BE465CD7A618 /* Pods-MicromixUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MicromixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectezr.MicromixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Micromix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		052C06C61CF3BCB3001F9F6B /* Build configuration list for PBXProject "Micromix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C06F11CF3BCB4001F9F6B /* Debug */,
+				052C06F21CF3BCB4001F9F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C06F31CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "Micromix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C06F41CF3BCB4001F9F6B /* Debug */,
+				052C06F51CF3BCB4001F9F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C06F61CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "MicromixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C06F71CF3BCB4001F9F6B /* Debug */,
+				052C06F81CF3BCB4001F9F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C06F91CF3BCB4001F9F6B /* Build configuration list for PBXNativeTarget "MicromixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C06FA1CF3BCB4001F9F6B /* Debug */,
+				052C06FB1CF3BCB4001F9F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 052C06C31CF3BCB3001F9F6B /* Project object */;
+}
