@@ -17,7 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-fR-9HL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mm9-vg-yzf">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mm9-vg-yzf" id="UlQ-kU-a2z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Q0r-02-Cs5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nQk-me-yeP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yW6-fR-9HL" secondAttribute="trailing" id="TOz-mA-hxt"/>
+                            <constraint firstItem="yW6-fR-9HL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZpV-a5-ejt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yW6-fR-9HL" secondAttribute="bottom" id="cJB-2u-jyc"/>
+                            <constraint firstItem="yW6-fR-9HL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yzv-rA-5jV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d0P-SG-zcn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5zv-AT-6fr">
@@ -26,6 +52,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="stageTable" destination="yW6-fR-9HL" id="N7r-9h-Q9C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

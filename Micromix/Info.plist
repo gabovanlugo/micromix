@@ -43,5 +43,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict/>
+		<key>Style</key>
+		<string>Default</string>
+		<key>Translucent</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

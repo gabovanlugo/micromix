@@ -1,5 +1,5 @@
 //
-//  sectionModel.swift
+//  SectionModel.swift
 //  Micromix
 //
 //  Created by Gabo Lugo on 5/24/16.
@@ -7,19 +7,35 @@
 //
 
 import Foundation
+import Firebase
 
 class Section {
     
-    let id: NSString
-    let level: NSNumber
-    let name: NSString
-    let color: NSString
+    let key: String
+    let id: String
+    let createdAt: String
+    let level: Int
+    let name: String
+    let color: String
     
-    init(level: NSNumber, name: NSString, color: NSString) {
+    // For new creation
+    init(level: Int, name: String, color: String) {
+        self.key = ""
         self.id = NSUUID().UUIDString
+        self.createdAt = NSDate().formattedISO8601
         self.level = level
         self.name = name
         self.color = color
+    }
+    
+    // For assignation
+    init(snapshot: FIRDataSnapshot) {
+        key = snapshot.value?["key"] as! String
+        id = snapshot.value?["id"] as! String
+        createdAt = snapshot.value?["createdAt"] as! String
+        level = snapshot.value?["level"] as! Int
+        name = snapshot.value?["name"] as! String
+        color = snapshot.value?["color"] as! String
     }
     
 }

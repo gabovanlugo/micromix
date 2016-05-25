@@ -10,11 +10,16 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
+    
+    var sections = [Section]()
 
+    @IBOutlet weak var stageTable: UITableView!
     let rootRef = FIRDatabase.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.automaticallyAdjustsScrollViewInsets = false
     
     }
     
@@ -23,15 +28,54 @@ class ViewController: UIViewController {
         
         let sectionRef = rootRef.child("sections")
         
-        sectionRef.observeEventType(.Value) { (snap: FIRDataSnapshot) in
+        
+        sectionRef.observeEventType(.Value) { (snapshot: FIRDataSnapshot) in
             
-            dump(snap.childrenCount)
+            self.sections = []
             
+            if snapshot.value is NSNull {
+                print("There's nothing bro!")
+                
+            } else {
+                
+                for item in snapshot.children {
+                    
+                    let newSection = Section(snapshot: item as! FIRDataSnapshot)
+                    
+                    self.sections.append(newSection)
+                    
+                    
+                }
+                
+                self.stageTable.reloadData()
+                print(self.sections.count)
+                
+
+            }
             
-            // snap.value?.description
         }
     }
+    
+}
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sections.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")
+        
+        let i = indexPath.row
+        
+        cell!.textLabel?.text = sections[i].name
 
+        return cell!
+        
+    }
+    
+
+    
 }
 

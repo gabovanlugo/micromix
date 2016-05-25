@@ -28,28 +28,21 @@ class AddNewViewController: UIViewController {
         
         let sectionToSave = Section(level: 1, name: nameField.text!, color: colorField.text!)
         
-        let post = ["uid": sectionToSave.id,
-                    "level": sectionToSave.level,
-                    "name": sectionToSave.name,
-                    "color": sectionToSave.color]
+        let sectionToPost = [
+            "key": key,
+            "id": sectionToSave.id,
+            "createdAt": sectionToSave.createdAt,
+            "level": sectionToSave.level,
+            "name": sectionToSave.name,
+            "color": sectionToSave.color
+        ]
         
         
-        let childUpdates = ["/sections/\(key)": post]
+        let childUpdates = ["/sections/\(key)": sectionToPost]
         
         rootRef.updateChildValues(childUpdates)
         
-        
-        
+        navigationController?.popViewControllerAnimated(true)
+
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
